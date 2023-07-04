@@ -271,6 +271,17 @@
 		-- Step 4 Error in ElasticSearch Solved by
 			- sudo apt-get --purge autoremove elasticsearch
 			- sudo rm -rf /etc/elasticsearch
+   
+   		-- ** Download and install the Debian package manually **
+     			- The Debian package for Elasticsearch v{version} can be downloaded from the website and installed as follows:
+
+				["source","sh",subs="attributes"]
+				--------------------------------------------
+				wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-{version}-amd64.deb
+				wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-{version}-amd64.deb.sha512
+				shasum -a 512 -c elasticsearch-{version}-amd64.deb.sha512 <1>
+				sudo dpkg -i elasticsearch-{version}-amd64.deb
+				--------------------------------------------
 			
 ##	8): Install Magento 2
 		--0 /home/eg-umair/.config/composer/auth.json  accessKey stored address
