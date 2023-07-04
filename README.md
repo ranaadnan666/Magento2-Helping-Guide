@@ -271,6 +271,13 @@
 		-- Step 4 Error in ElasticSearch Solved by
 			- sudo apt-get --purge autoremove elasticsearch
 			- sudo rm -rf /etc/elasticsearch
+   		-- Step 6 For version 8.* remove Password security
+			- go to folder **etc/elasticsearch/elasticsearch.yml**
+   			```
+      				xpack.security.enabled: false
+				xpack.security.enrollment.enabled: false
+      			```
+
 			
 ##	8): Install Magento 2
 		--0 /home/eg-umair/.config/composer/auth.json  accessKey stored address
