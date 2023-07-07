@@ -276,6 +276,9 @@ Private Key: f505c128e18d79b04e2921c253459942
 		-- Step 4 Error in ElasticSearch Solved by
 			- sudo apt-get --purge autoremove elasticsearch
 			- sudo rm -rf /etc/elasticsearch
+   		-- Step 5 remove password error from elas -8 
+     			- xpack.security.enabled: false
+			- xpack.security.enrollment.enabled: false
 			
 ##	8): Install Magento 2
 		--0 /home/eg-umair/.config/composer/auth.json  accessKey stored address
