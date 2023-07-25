@@ -416,6 +416,11 @@ Private Key: f505c128e18d79b04e2921c253459942
 		-- sudo chown root:root /etc/sudoers 
 
 
+##	You need to replace the below code in the core Magento file for a quick fix. 
+	-- FilePath: vendor/magento/framework/View/Asset/PreProcessor/FileNameResolver.php
+		~ https://community.magento.com/t5/Installing-Magento-2-x/Magento-2-4-4-and-PHP8-1-Deprecated-Functionality-pathinfo/td-p/496718
+
+
 ##	*0): Use self-assign Open ssl 
 		-- sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
 		-- While using OpenSSL, you should also create a strong Diffie-Hellman (DH) group
